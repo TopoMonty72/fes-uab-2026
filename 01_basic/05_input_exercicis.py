@@ -6,7 +6,9 @@
 # Exercici 1
 # Demana el nom d'un tècnic i el nom de la xarxa que està instal·lant.
 # Després, mostra un missatge amb aquesta informació.
-
+nom_xarxa = input("Nom de la xarxa: \n")
+nom_tecnic = input("Nom del tecnic: \n")
+print(f"Hola {nom_tecnic}, estas instalando {nom_xarxa}")
 
 # Exercici 2
 # Demana la longitud d'un enllaç de fibra en quilòmetres i la velocitat de transmissió
