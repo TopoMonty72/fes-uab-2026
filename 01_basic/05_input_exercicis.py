@@ -8,7 +8,6 @@
 # Després, mostra un missatge amb aquesta informació.
 nombre_tecnico = input("Como se llama el tecnico: \n")
 nombre_red = input("Que red esta instalando: \n")
-
 print(f"El tecnico se llama {nombre_tecnico} y esta instalando la red {nombre_red}")
 
 # Exercici 2
@@ -16,8 +15,19 @@ print(f"El tecnico se llama {nombre_tecnico} y esta instalando la red {nombre_re
 # en Gbps. Mostra quants segons caldrien per transmetre 1 GB de dades.
 # Suposa que 1 GB = 8 Gb i que la velocitat es manté constant.
 
+longitud_enlace = float(input("Longitud del enlace de fibra en kilometros: \n"))
+velocidad_tranmision = float(input("Velocidad de transmision en Gbps: \n"))
+tiempo = 8 / velocidad_tranmision
+print(f"El enlace tardaria {tiempo} en a traves de {longitud_enlace} de cable ")
 
 # Exercici 3
 # Demana el nombre d'hores de feina i el preu per hora d'una instal·lació de xarxa.
 # Demana també el preu del material.
 # Mostra el cost total de la instal·lació.
+
+horas_trabajadas = float(input("Horas trabajadas: \n"))
+precio_hora = float(input("Precio por hora trabajada: \n"))
+precio_material = float(input("Precio del material: \n"))
+coste_total = precio_hora * precio_material + precio_material
+
+print(f"El precio total seria de {coste_total} euros")
