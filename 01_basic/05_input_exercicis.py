@@ -15,6 +15,11 @@ print(f"Hola {nom_tecnic}, estas instalando {nom_xarxa}")
 # en Gbps. Mostra quants segons caldrien per transmetre 1 GB de dades.
 # Suposa que 1 GB = 8 Gb i que la velocitat es manté constant.
 
+longitud = input("Longitud enllaç en km: \n")
+velocitat = input ("Velocitat trnsmissió: \n")
+
+
+
 
 # Exercici 3
 # Demana el nombre d'hores de feina i el preu per hora d'una instal·lació de xarxa.
