@@ -16,7 +16,6 @@
 # Ten en cuenta que la función input() devuelve un string
 # Así que si queremos obtener un número se debe convertir el string a un número
 # age = input("¿Cuántos años tienes?\n")
-
 # print(f"Tendrás {int(age)+3} años dentro de 3 años")  # Esto no funcionará como esperamos
 # age = int(age)
 # print(f"Tienes {age} años")
