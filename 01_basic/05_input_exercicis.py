@@ -3,6 +3,7 @@
 # Practica l'entrada de dades i la conversió de tipus amb exemples de telecomunicacions.
 ###
 
+
 # Exercici 1
 # Demana el nom d'un tècnic i el nom de la xarxa que està instal·lant.
 # Després, mostra un missatge amb aquesta informació.
