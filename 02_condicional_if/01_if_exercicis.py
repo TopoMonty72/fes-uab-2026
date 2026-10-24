@@ -5,15 +5,58 @@
 # Exercici 1: Determinar el més gran de dos nombres
 # Demana a l'usuari que introdueixi dos nombres i mostra un missatge
 # que indiqui quin és més gran o si són iguals.
+num_1 = int(input("Introduce primer numero: \n"))
+num_2 = int(input("Introduce el segundo numero: \n"))
+
+if num_1 == num_2 :
+    print(f"{num_1} y {num_2} son el mismo numero")
+elif num_1 > num_2 :
+    print(f"{num_1} es mayor que {num_2}")
+else :
+    print(f"{num_2} es mayor que {num_1}")
+
 
 # Exercici 2: Calculadora senzilla
 # Demana a l'usuari dos nombres i una operació (+, -, *, /).
 # Fes l'operació i mostra'n el resultat (gestiona la divisió per zero).
+num_1 = int(input("Introduce primer numero: \n"))
+num_2 = int(input("Introduce el segundo numero: \n"))
+operacion = input("Introduce que operacion hacer: \n").strip()
+
+if operacion == "+" :
+    calculo = num_1 + num_2
+    print(f"{calculo}")
+elif operacion == "-" :
+    calculo = num_1 - num_2
+    print(f"{calculo}")
+elif operacion == "*" :
+    calculo = num_1 * num_2
+    print(f"{calculo}")
+elif operacion == "/" and num_2 == 0 :
+    print("No se puede dividir")
+elif operacion == "/" :
+    calculo = num_1 / num_2
+    print(f"{calculo}")
+else :
+    print("Operacion incorrecta")
+
+
 
 # Exercici 3: Any de traspàs
 # Demana a l'usuari que introdueixi un any i determina si és de traspàs.
 # Un any és de traspàs si és divisible per 4, excepte si és divisible per 100
 # però no per 400.
+
+year = int(input("Introduce el year: \n"))
+
+if year % 4 != 0 :
+    print ("No es bisiesto")
+elif year % 100 == 0 :
+    elif year % 400 != 0 :
+        print ("No es bisiesto")
+    elif year % 400 == 0 :    
+        print ("Es bisiesto")
+
 
 # Exercici 4: Classificar edats
 # Demana a l'usuari que introdueixi una edat i classifica-la en:

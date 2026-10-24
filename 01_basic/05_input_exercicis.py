@@ -16,17 +16,11 @@ print(f"El tecnico se llama {nombre_tecnico} y esta instalando la red {nombre_re
 # en Gbps. Mostra quants segons caldrien per transmetre 1 GB de dades.
 # Suposa que 1 GB = 8 Gb i que la velocitat es manté constant.
 
-longitud = input("Longitud enllaç en km: \n")
-velocitat = input ("Velocitat trnsmissió: \n")
-
-
-
-=======
 longitud_enlace = float(input("Longitud del enlace de fibra en kilometros: \n"))
 velocidad_tranmision = float(input("Velocidad de transmision en Gbps: \n"))
 tiempo = 8 / velocidad_tranmision
 print(f"El enlace tardaria {tiempo} en a traves de {longitud_enlace} de cable ")
->>>>>>> bf269f6412313de6e13ec47b2318259f049d0c6e
+
 
 # Exercici 3
 # Demana el nombre d'hores de feina i el preu per hora d'una instal·lació de xarxa.
