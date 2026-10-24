@@ -8,7 +8,7 @@ print("Escriu un programa que imprimeixi el teu nom i la teva ciutat en línies 
 
 ### Completa aquí
 
-print("--------------")
+print("Hugo", "Cardo", sep="\n")
 
 print("\nExercici 2: Mostra els tipus de dades de les variables següents:")
 print("Utilitza la comanda 'type()' per determinar el tipus de dades de cada variable.")
@@ -20,7 +20,7 @@ e = None
 
 ### Completa aquí
 
-print("--------------")
+print(type(a), type(b), type(c), type(d), type(e))
 
 print("\nExercici 3: Conversió de tipus")
 print("Converteix la cadena \"12345\" a un enter i després a un float.")
@@ -28,7 +28,14 @@ print("Converteix el float 3.99 a un enter. Què passa?")
 
 ### Completa aquí
 
-print("--------------")
+cadena = ("12345")
+cadena_int = int(cadena)
+cadena_float = float (cadena)
+a = float(3.99)
+b = int(a)
+
+print(f"{cadena}, {cadena_int} {cadena_float}, {a}, {b}")
+
 
 print("\nExercici 4: Variables")
 print("Crea variables per al teu nom, edat i alçada.")

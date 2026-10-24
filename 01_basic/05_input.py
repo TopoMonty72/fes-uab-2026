@@ -13,13 +13,14 @@
 # print(f"Hola {nom}, encantat de conèixer-te")
 # print("Hola " + nom + ", encantat de conèixer-te")
 
-# Tingues en compte que la funció input() retorna una cadena de text
-# Per obtenir un nombre, cal convertir aquesta cadena a un tipus numèric
-# edat = input("Quants anys tens?\n")
-
-# print(f"D'aquí a 3 anys tindràs {int(edat) + 3} anys")  # Això no funcionarà com esperem
-# edat = int(edat)
-# print(f"Tens {edat} anys")
+=======
+# Ten en cuenta que la función input() devuelve un string
+# Así que si queremos obtener un número se debe convertir el string a un número
+# age = input("¿Cuántos años tienes?\n")
+# print(f"Tendrás {int(age)+3} años dentro de 3 años")  # Esto no funcionará como esperamos
+# age = int(age)
+# print(f"Tienes {age} años")
+>>>>>>> a39c14c40149ec147890d42286dae43591ae41d2
 
 # La funció input() també pot retornar diversos valors
 # Per fer-ho, l'usuari els ha de separar amb un espai
