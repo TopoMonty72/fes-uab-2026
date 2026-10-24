@@ -52,10 +52,12 @@ year = int(input("Introduce el year: \n"))
 if year % 4 != 0 :
     print ("No es bisiesto")
 elif year % 100 == 0 :
-    elif year % 400 != 0 :
+    if year % 400 != 0 :
         print ("No es bisiesto")
-    elif year % 400 == 0 :    
+    else :    
         print ("Es bisiesto")
+else :
+    print ("Es bisiesto")
 
 
 # Exercici 4: Classificar edats
@@ -66,12 +68,25 @@ elif year % 100 == 0 :
 # - Adult (18-64 anys)
 # - Persona gran (65 anys o més)
 
+edad = int(input("Introduce tu edad: \n"))
+if edad >= 65 :
+    print("Persona mayor")
+elif 64 >= edad >= 18 :
+    print("Adulto")
+elif 17 >= edad >= 13 :
+    print("Adolescente")
+elif 12 >= edad >= 3 :
+    print ("Menor")
+elif 2 >= edad >= 0 :
+    print("Baby")
+
 # Exercici 5: Qualitat del senyal Wi-Fi
 # Demana el nivell de senyal rebut (RSSI) en dBm i classifica la cobertura:
 # - -50 dBm o superior: excel·lent
 # - Entre -67 dBm i menys de -50 dBm: bona
 # - Entre -75 dBm i menys de -67 dBm: feble
 # - Inferior a -75 dBm: molt feble
+
 
 # Exercici 6: Nivell de recepció d'una connexió de fibra òptica
 # Demana la potència òptica rebuda en dBm. Per a aquest exercici, considera
