@@ -118,6 +118,20 @@ elif 2 >= edad >= 0 :
 # del 3 % o menys; acceptable si és de 150 ms o menys i la pèrdua és del 5 %
 # o menys; en qualsevol altre cas, deficient.
 
+latencia = float(input("Introduce la latencia en milisegundos: \n"))
+paquetes_perdidos = float(input("Introduce porcentaje de paquetes perdidos: \n"))
+if latencia < 0 or paquetes_perdidos < 0 or 100 < paquetes_perdidos :
+    print("Parametros fuera del valor")
+else :
+    if latencia <= 30 and paquetes_perdidos <= 1 :
+        print("Conexion excelente")
+    elif latencia <= 80 and paquetes_perdidos <= 3 :
+        print("Conexion buena")
+    elif latencia <= 150 and paquetes_perdidos <= 5 :
+        print("Conexion aceptable")
+    else : 
+        print("Conexion deficiente")
+
 # Exercici 11: Cost mensual d'un pla de dades
 # Demana el tipus de pla (bàsic o plus) i el consum mensual en GB.
 # El pla bàsic costa 10 € i inclou 10 GB; cada GB addicional costa 1,50 €.
